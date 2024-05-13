@@ -1,0 +1,56 @@
+{
+  "name": "genkitx-redis",
+  "keywords": [
+    "genkit-plugin",
+    "genkit-indexer",
+    "genkit-retriever",
+    "genkit-embedder",
+    "genkit-flow",
+    "genkit-rag",
+    "redis",
+    "vector",
+    "rag",
+    "ai",
+    "generative-ai",
+    "genai"
+  ],
+  "version": "0.0.1-rc.1",
+  "description": "Genkit AI framework plugin for Redis vector database. get AI response enriched with additional context and knowledge with Redis using RAG Implementation",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lib/index.js",
+    "compile": "tsc --declaration",
+    "build": "npm run build:clean && npm run compile",
+    "build:clean": "rm -rf ./lib",
+    "build:watch": "tsc --watch"
+  },
+  "author": "surahutomo.aziz@gmail.com",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@genkit-ai/ai": "^0.5.0-rc.2",
+    "@genkit-ai/core": "^0.5.0-rc.2",
+    "@genkit-ai/flow": "^0.5.0-rc.2",
+    "@genkit-ai/googleai": "^0.5.0-rc.2",
+    "@langchain/google-genai": "^0.0.11",
+    "fs": "^0.0.1-security",
+    "langchain": "^0.0.11",
+    "node-absolute-path": "^1.0.6",
+    "node-fetch": "^3.2.6",
+    "redis": "^4.6.13",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "glob": "^8.1.0",
+    "typescript": "^5.4.5"
+  },
+  "files": [
+    "lib"
+  ],
+  "types": "./lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/retzd-tech/genkitx-redis.git"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "compileOnSave": true,
+  "include": [
+    "indexer",
+    "indexer",
+    "config",
+    "types",
+    "actions",
+    "index.ts",
+    "constants",
+    "interfaces",
+    "utilities",
+  ],
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2017",
+    "skipLibCheck": true,
+    "esModuleInterop": true
+  }
+}
