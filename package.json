@@ -18,7 +18,7 @@
   "description": "Genkit AI framework plugin for Redis vector database. get AI response enriched with additional context and knowledge with Redis using RAG Implementation",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node lib/index.js",
     "compile": "tsc --declaration",
     "build": "npm run build:clean && npm run compile",
@@ -42,7 +42,10 @@
   },
   "devDependencies": {
     "@types/glob": "^8.1.0",
+    "@types/jest": "^30.0.0",
     "glob": "^8.1.0",
+    "jest": "^30.0.2",
+    "ts-jest": "^29.4.0",
     "typescript": "^5.4.5"
   },
   "files": [
